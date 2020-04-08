@@ -38,7 +38,7 @@
      * Get the name of new file to be uploaded to the SFTP server
      * Get the file after download
      * Rename latest downloaded file with +1
-     * Upload the csv file to SFTP server  // Email feature, is to email the same CSV file, to staging+qa-test41-job-reqs@staging.docs.hello.com.
+     * Upload the csv file to SFTP server  // Email feature, is to email the same CSV file, to staging@staging.hello.com.
      * Disconnect from SFTP server
      * Delete the file from Old file folder
      * Check Upload progress

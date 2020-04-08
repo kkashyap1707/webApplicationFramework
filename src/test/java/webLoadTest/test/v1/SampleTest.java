@@ -15,12 +15,6 @@ public class SampleTest extends TestBaseBrowser {
 
         System.out.println("First Keshav ");
 
-        System.out.println("Host is :: "+GlobalVars.HOST);
-        System.out.println("Password is :: "+GlobalVars.SFTP_AUTH_PASSWORD);
-        System.out.println("Username is :: "+GlobalVars.SFTP_AUTH_USERNAME);
-        System.out.println("Port is :: "+GlobalVars.PORT);
-
-
 
     }
 
