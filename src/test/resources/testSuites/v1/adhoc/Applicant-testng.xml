@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--<suite thread-count="3" name="Suite" parallel="methods">-->
+<suite name="Suite" parallel="tests">
+
+  <test name="Test">
+    <classes>
+
+
+        <!--<class name="sftp.test.v1.JobReqEmailTest"/>-->
+        <!--<class name="sftp.test.v1.JobReqTest"/>-->
+
+        <class name="sftp.test.v1.JobSampleTest"/>
+
+        <!--<class name="sftp.test.v1.JobTest"/>
+        <class name="sftp.test.v1.JobAPITest"/>-->
+
+
+        <!--<class name="sftp.test.v1.JobATSTest"/>-->
+
+
+        <!--<class name="sftp.test.v1.JobQualifierTest"/>-->
+
+        <!--<class name="sftp.test.v1.SSHtcpTest"/>-->
+
+
+
+    </classes>
+  </test>
+
+
+</suite>
