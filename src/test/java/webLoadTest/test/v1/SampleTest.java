@@ -15,7 +15,10 @@ public class SampleTest extends TestBaseBrowser {
 
         System.out.println("First Keshav ");
 
+        BrowserUtil.launchBrowser("https://www.google.com");
 
+
+        BrowserUtil.closeBrowser();
     }
 
 }

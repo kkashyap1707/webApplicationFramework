@@ -74,7 +74,7 @@ public class BrowserUtil extends TestBaseBrowser {
         option.setExperimentalOption("useAutomationExtension", false);
         option.addArguments("--test-type");
         option.addArguments("--disable-extensions");
-        option.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
+        //option.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
 
         System.out.println("Option is ::"+option);
 
