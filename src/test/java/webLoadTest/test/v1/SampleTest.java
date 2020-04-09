@@ -10,8 +10,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import webLoadTest.test.TestBaseBrowser;
-import webLoadTest.utilities.*;
 
 import net.lightbody.bmp.BrowserMobProxy;
 import net.lightbody.bmp.BrowserMobProxyServer;
@@ -19,10 +17,9 @@ import net.lightbody.bmp.client.ClientUtil;
 import net.lightbody.bmp.core.har.Har;
 import net.lightbody.bmp.proxy.CaptureType;
 
-import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.net.Inet4Address;
-import java.net.UnknownHostException;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -38,7 +35,11 @@ public class SampleTest {
     public static String chromeDriverPath = currentDirectory + "/lib/chromedriver";
     public static String fileDownloadPath = currentDirectory + "/downloads";
 
+    String workingDir = System.getProperty("user.dir");
 
+    String filename = workingDir+"/PerformanceTestHar.har";
+    String filename1 = workingDir+"/PerformanceTestHar.txt";
+    String filename2 = workingDir+"/GIFparameters.txt";
 
     @BeforeTest
     private void beforeTestAnalyticsData(){
@@ -88,25 +89,20 @@ public class SampleTest {
     @Test
     public void testAnalyticsData() throws IOException {
 
-        /*
-         * Giving a har name
-         */
+        System.out.println("Current working directory : " + workingDir);
+
         proxy.newHar("Google");
 
         driver.get("https://www.google.com");
         driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
 
-        /*
-         * Get the all network traffic.
-         */
         Har har = proxy.getHar();
+        FileOutputStream fos = new FileOutputStream(filename);
+        har.writeTo(fos);
 
-        /*
-         * Store it in a .har file.
-         */
-        File harFile = new File("./Google.har");
-        har.writeTo(harFile);
+
     }
+
 
     @AfterTest
     private void afterTestAnalyticsData() {
@@ -116,5 +112,8 @@ public class SampleTest {
             proxy.stop();
         }
     }
+
+
+
 
 }
