@@ -7,6 +7,7 @@
     <classes>
 
         <class name="webLoadTest.test.v1.SampleTest"/>
+        <!--<class name="webLoadTest.test.v1.NetworkTrafficJSONTest"/>-->
 
     </classes>
   </test>
