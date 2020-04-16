@@ -39,12 +39,7 @@ public  class InputGenerator {
     public static String createdDate = DateUtil.currentDateTime("MM/dd/yyyy hh:mm:ss a",timeZone);
     public static String updatedDate = DateUtil.currentDateTime("MM/dd/yyyy hh:mm:ss a",timeZone);
 
-    public static String hiringManagerEmail = "veronica@tothenew.com";
-    public static String hiringManagerEmailBlank = "";
-    public static String additionalReqReviewerEmail = "veronica@tothenew.com";
-    public static String primaryRecruiterEmail = "veronica@tothenew.com";
-    public static String administrativeSupportEmail = "veronica@tothenew.com";
-    public static String firstInterviewerEmail = "veronica@tothenew.com";
+
 
     //public static String firstInterviewerEmailBlank = faker.bothify(InputGenerator.faker.name().username()+"@tothenew.com");
     public static String jobOfficeAddressEmail = "veronica@tothenew.com";
@@ -87,14 +82,7 @@ public  class InputGenerator {
     public static String positionId = "";
     public static String BranchOfficeLocationHireVueEnabled = "";
 
-    public static String videoInterviewingPackage = "HireVue Standard";
-    public static String orientationLocation = "Branch Office";
-    public static String licensesCertification = "CPR Certification";
-    public static String employmentType = "Part Time";
-    public static String jobFolderStatus = "Approved";
-    public static String securityClearance = "Not Applicable";
-    public static String shiftsAvailable = "Afternoon, Evening, Morning, Overnight";
-    public static String hiringManagerLoginGroup ="Hiring Manager (tothenew Enabled)";
+ 
 
     public static String administrativeSupportHomeAddress = postingLocationCountry +"-"+postingLocationState+"-"+postingLocationCity;
     public static String primaryRecruiterHomeAddress = postingLocationCountry +"-"+postingLocationState+"-"+postingLocationCity;
@@ -166,25 +154,6 @@ public  class InputGenerator {
             administrativeSupportEmail,
             administrativeSupportPhone,
             administrativeSupportHomeAddress,
-            postingLocationLocation,
-            postingLocationAddress,
-            postingLocationAddress2,
-            postingLocationCity,
-            postingLocationState,
-            postingLocationPostalCode,
-            postingLocationCountry,
-            requisitionPriority,
-            videoInterviewingPackage,
-            firstInterviewerSystemID,
-            firstInterviewerFullName,
-            firstInterviewerEmail,
-            firstInterviewerPhone,
-            firstInterviewerHomeAddress,
-            preEmploymentRequirements,
-            additionalQualifications,
-            jobOfficeAddress1,
-            jobOfficeAddress2,
-            jobOfficeAddressCity,
             jobOfficeAddressState,
             jobOfficeAddressZip,
             jobOfficeAddressLocationName,
