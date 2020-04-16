@@ -13,7 +13,7 @@ public class SFTPClient extends TestBaseBrowser {
 
     private String privateKeyPath;
 
-    public static String filePath = "/home/sftpusers/home/"+GlobalVars.SFTP_AUTH_USERNAME+"/job-reqs/";
+    public static String filePath = "/home/sftpusers/home/"+GlobalVars.SFTP_AUTH_USERNAME+"/jo/";
 
     public SFTPClient() {
 
