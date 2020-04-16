@@ -160,8 +160,7 @@ public class RequestUtil extends TestBaseBrowser {
                 .cookies(TestBaseBrowser.postLoginCookies)
                 .header("If-Match", headerETag)
                 .header("Origin", GlobalVars.ORIGIN)
-                .header("Upgrade-Insecure-Requests", "1")
-                .header("referer", GlobalVars.BASE_URL + "/account/login/?next=/dashboard/list")
+    
                 .header("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3")
                 .log()
                 .everything()
@@ -187,11 +186,10 @@ public class RequestUtil extends TestBaseBrowser {
                 .urlEncodingEnabled(true)
                 .auth()
                 .preemptive()
-                .basic("ttn_qa","123456@tothenew")
+                .basic("t_qa","123456@")
                 .urlEncodingEnabled(true)
                 .contentType("application/json")
-                .header("Client-key","tothenew")
-                .header("employer-identifier","SOUTHERN_CROSS")
+      
                 /*.header("Content-Type", "application/json")*/
                 .header("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3")
                 .when()
@@ -220,11 +218,10 @@ public class RequestUtil extends TestBaseBrowser {
                 .urlEncodingEnabled(true)
                 .auth()
                 .preemptive()
-                .basic("ttn_qa","123456@tothenew")
+                .basic("t_qa","123456@")
                 .urlEncodingEnabled(true)
                 .contentType("application/json")
-                .header("Client-key","tothenew")
-                .header("employer-identifier","QA_Fedex_Auto")
+
                 /*.header("Content-Type", "application/json")*/
                 .header("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3")
                 .when()
@@ -253,12 +250,10 @@ public class RequestUtil extends TestBaseBrowser {
                 .urlEncodingEnabled(true)
                 .auth()
                 .preemptive()
-                .basic("ttn_qa","123456@tothenew")
+                .basic("tqa","123456")
                 .urlEncodingEnabled(true)
                 .contentType("application/json")
-                .header("Client-key","tothenew")
-                .header("employer-identifier","QA_FedEx")
-                /*.header("Content-Type", "application/json")*/
+
                 .header("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3")
                 .when()
                 .body(params)
@@ -286,11 +281,10 @@ public class RequestUtil extends TestBaseBrowser {
                 .urlEncodingEnabled(true)
                 .auth()
                 .preemptive()
-                .basic("ttn_qa","123456@tothenew")
+                .basic("t_qa","123456")
                 .urlEncodingEnabled(true)
                 .contentType("application/json")
-                .header("Client-key","tothenew")
-                .header("employer-identifier","QA_FedEx")
+              
                 /*.header("Content-Type", "application/json")*/
                 .header("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3")
                 .when()
@@ -322,7 +316,7 @@ public class RequestUtil extends TestBaseBrowser {
                 .cookies(TestBaseBrowser.postLoginCookies)
                 .header("Origin", GlobalVars.ORIGIN)
                 .header("Upgrade-Insecure-Requests", "1")
-                .header("referer", GlobalVars.BASE_URL + "/account/login/?next=/dashboard/list")
+
                 .header("Accept", "application/json, text/plain, */*")
                 .when()
                 .body(body)
@@ -352,7 +346,6 @@ public class RequestUtil extends TestBaseBrowser {
                 .cookies(TestBaseBrowser.postLoginCookies)
                 .header("Origin", GlobalVars.ORIGIN)
                 .header("Upgrade-Insecure-Requests", "1")
-                .header("referer", GlobalVars.BASE_URL + "/account/login/?next=/dashboard/list")
                 .header("Accept", "application/json, text/plain, */*")
                 .when()
                 .body(params)
@@ -382,7 +375,7 @@ public class RequestUtil extends TestBaseBrowser {
                 .cookies(TestBaseBrowser.postLoginCookies)
                 .header("Origin", GlobalVars.ORIGIN)
                 .header("Upgrade-Insecure-Requests", "1")
-                .header("referer", GlobalVars.BASE_URL + "/account/login/?next=/dashboard/list")
+
                 .header("Accept", "application/json, text/plain, */*")
                 .when()
                 .body(params)
@@ -411,8 +404,7 @@ public class RequestUtil extends TestBaseBrowser {
                 .contentType("application/json;charset=UTF-8")
                 .cookies(TestBaseBrowser.postLoginCookies)
                 .header("Origin", GlobalVars.ORIGIN)
-                .header("Upgrade-Insecure-Requests", "1")
-                .header("referer", GlobalVars.BASE_URL + "/account/login/?next=/dashboard/list")
+  
                 .header("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3")
                 .when()
                 .body(body)
@@ -440,8 +432,8 @@ public class RequestUtil extends TestBaseBrowser {
                 .config(RestAssured.config().logConfig(new LogConfig(RequestUtil.requestCapture, true)))
                 .urlEncodingEnabled(true)
                 .contentType("application/json")
-                .header("Authorization", "basic c2VyaGlpOmdoZmRmITEyMw==")
-                .header("Client-key", "tothenew")
+                .header("Authorization", "basic ==")
+       
                 .when()
                 .body(body)
                 .log()
@@ -502,8 +494,7 @@ public class RequestUtil extends TestBaseBrowser {
                 .contentType(ContentType.URLENC.withCharset("UTF-8"))
                 .cookies(TestBaseBrowser.postLoginCookies)
                 .header("Origin", GlobalVars.ORIGIN)
-                .header("Upgrade-Insecure-Requests", "1")
-                .header("referer", GlobalVars.BASE_URL + "/account/login/?next=/dashboard/list")
+
                 .header("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3")
                 .log()
                 .everything()
@@ -523,8 +514,7 @@ public class RequestUtil extends TestBaseBrowser {
 
                 .contentType("application/json")
                 .cookies(TestBaseBrowser.postLoginCookies)
-                .header("Authorization", "basic c2VyaGlpOmdoZmRmITEyMw==")
-                .header("Client-key", "tothenew")
+          
                 .header("Accept", "*/*")
                 .log()
                 .everything()
@@ -542,8 +532,7 @@ public class RequestUtil extends TestBaseBrowser {
                 .given()
                 .config(RestAssured.config().logConfig(new LogConfig(RequestUtil.requestCapture, true)))
 
-                .header("Client-key", "tothenew")
-                .header("Authorization", "basic Y2hhcnVfdHRuOjM2MGxvZ2ljYQ==")
+         
 
                 .log()
                 .everything()
