@@ -208,11 +208,11 @@ public class BrowserUtil extends TestBaseBrowser {
 
     public static void deleteFile(){
 
-        File file = new File(currentDirectory + "/downloads/QA_Test41_Corporate_Jobs_1 - good.csv");
+        File file = new File(currentDirectory + "/downloads/QA.csv");
 
         // renaming the file and moving it to a new location
         if(file.renameTo
-                (new File(currentDirectory + "/oldFile/QA_Test41_Corporate_Jobs64.csv")))
+                (new File(currentDirectory + "/oldFile/QA.csv")))
         {
             // if file copied successfully then delete the original file
             //file.delete();
